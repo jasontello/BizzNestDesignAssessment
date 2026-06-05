@@ -187,7 +187,7 @@ button {
 .hero {
   display: grid;
   grid-template-columns: 1fr;
-  min-height: 620px;
+  min-height: auto;
   background: transparent;
 }
 
@@ -197,15 +197,15 @@ button {
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  padding: 56px 8%;
+  padding: 30px 8% 34px;
   background: transparent;
 }
 
 .hero h1 {
   max-width: 760px;
-  font-size: clamp(3.25rem, 9vw, 5.2rem);
+  font-size: clamp(2.6rem, 11.2vw, 3.25rem);
   font-weight: 700;
-  line-height: 1.05;
+  line-height: 1.03;
   text-align: left;
   text-transform: uppercase;
 }
@@ -216,10 +216,10 @@ button {
 
 .hero p {
   max-width: 620px;
-  margin-top: 24px;
-  font-size: clamp(1rem, 2.6vw, 1.35rem);
+  margin-top: 18px;
+  font-size: clamp(0.95rem, 3.9vw, 1.05rem);
   font-weight: 400;
-  line-height: 1.45;
+  line-height: 1.35;
 }
 
 .hero-actions {
@@ -227,7 +227,7 @@ button {
   flex-direction: column;
   align-items: flex-start;
   gap: 14px;
-  margin-top: 34px;
+  margin-top: 24px;
 }
 
 .hero-button {
@@ -256,10 +256,11 @@ button {
 
 .hero-media {
   order: 1;
-  min-height: 360px;
+  height: clamp(195px, 25vh, 220px);
+  min-height: 0;
   background-image: url("https://opensourcesanjose.org/assets/img/img_archive/cfsj_withcfa_at_bowersinstitute.jpeg");
-  background-position: center 24%;
-  background-size: auto 120%;
+  background-position: center 20%;
+  background-size: auto 160%;
   background-repeat: no-repeat;
 }
 
@@ -952,8 +953,20 @@ h2 {
     padding: 64px 7% 64px 10%;
   }
 
+  .hero h1 {
+    font-size: clamp(3.25rem, 9vw, 5.2rem);
+    line-height: 1.05;
+  }
+
+  .hero p {
+    margin-top: 24px;
+    font-size: clamp(1rem, 2.6vw, 1.35rem);
+    line-height: 1.45;
+  }
+
   .hero-media {
     order: 2;
+    height: auto;
     min-height: 640px;
     background-position: center 24%;
     background-size: auto 124%;
@@ -961,6 +974,7 @@ h2 {
 
   .hero-actions {
     flex-direction: column;
+    margin-top: 34px;
   }
 
   .about-feature h3 {
