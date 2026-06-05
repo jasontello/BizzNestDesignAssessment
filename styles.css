@@ -192,6 +192,7 @@ button {
 }
 
 .hero-panel {
+  order: 2;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -254,6 +255,7 @@ button {
 }
 
 .hero-media {
+  order: 1;
   min-height: 360px;
   background-image: url("https://opensourcesanjose.org/assets/img/img_archive/cfsj_withcfa_at_bowersinstitute.jpeg");
   background-position: center 24%;
@@ -946,10 +948,12 @@ h2 {
   }
 
   .hero-panel {
+    order: 1;
     padding: 64px 7% 64px 10%;
   }
 
   .hero-media {
+    order: 2;
     min-height: 640px;
     background-position: center 24%;
     background-size: auto 124%;
