@@ -277,7 +277,7 @@ p {
 
 .about-feature {
   color: var(--text);
-  padding: clamp(42px, 6vw, 86px) clamp(22px, 5vw, 58px);
+  padding: clamp(42px, 6vw, 86px) clamp(14px, 2.2vw, 32px);
 }
 
 .about-feature + .about-feature {
@@ -731,8 +731,8 @@ h2 {
   }
 
   .about-feature-copy {
-    grid-template-columns: minmax(120px, 0.34fr) minmax(0, 0.66fr);
-    gap: clamp(32px, 7vw, 120px);
+    grid-template-columns: minmax(120px, 0.42fr) minmax(0, 0.58fr);
+    gap: clamp(56px, 10vw, 180px);
     align-items: start;
   }
 
