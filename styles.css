@@ -298,6 +298,21 @@ p {
   text-transform: uppercase;
 }
 
+.about-feature-aside {
+  display: grid;
+  gap: 22px;
+  align-content: start;
+}
+
+.about-feature-photo {
+  display: block;
+  width: min(100%, 500px);
+  aspect-ratio: 4 / 3;
+  border: 1px solid rgba(57, 159, 211, 0.34);
+  object-fit: cover;
+  object-position: center 42%;
+}
+
 .about-feature h3 {
   max-width: 820px;
   font-family: var(--font-body);
