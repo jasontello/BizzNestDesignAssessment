@@ -68,7 +68,7 @@
       <main>
         <section class="hero" aria-labelledby="hero-title">
           <div class="hero-panel">
-            <h1 id="hero-title">Help Build Tech for a Better San José</h1>
+            <h1 id="hero-title">Help Build Tech for a Better <span class="text-nowrap">San José</span></h1>
             <p>Uniting volunteer coders, designers, researchers, community members, &amp; more in solving local issues</p>
             <div class="hero-actions">
               <a class="hero-button" href="#">Get Involved</a>
@@ -80,6 +80,7 @@
         <section class="about-editorial" aria-label="About Open Source San José">
           <article class="about-feature about-feature-who">
             <h3>Who We Are</h3>
+            <span class="about-icon about-icon-community" aria-hidden="true"></span>
             <p>
               Open Source San José is a nonprofit civic innovation community where volunteers use technology, UX
               research, UI design, and partnerships to solve local problems.
@@ -88,6 +89,7 @@
 
           <article class="about-feature about-feature-mission">
             <h3>Our Mission</h3>
+            <span class="about-icon about-icon-mission" aria-hidden="true"></span>
             <p>
               We make community services more transparent, accessible, and equitable by building civic projects with
               local government and community-based organizations.
@@ -96,6 +98,7 @@
 
           <article class="about-feature about-feature-vision">
             <h3>Our Vision</h3>
+            <span class="about-icon about-icon-vision" aria-hidden="true"></span>
             <p>
               We aim to be a trusted technical partner for San José, nearby governments, and local nonprofits whenever
               community challenges need thoughtful digital solutions.
@@ -104,6 +107,7 @@
 
           <article class="about-feature about-feature-work">
             <h3>What We Do</h3>
+            <span class="about-icon about-icon-work" aria-hidden="true"></span>
             <p>
               We host bi-monthly civic hack nights where anyone can get onboarded, join a project, and contribute skills
               in code, design, research, organizing, writing, data, or subject-matter expertise.
@@ -111,66 +115,57 @@
           </article>
         </section>
 
-        <section class="cta-strip" aria-label="Get involved">
-          <article class="cta-card">
-            <div class="cta-icon" aria-hidden="true">🤝</div>
-            <a href="#">Get Involved</a>
-            <p>Share your skills with your community!</p>
-          </article>
-        </section>
-
         <section class="section work" aria-labelledby="work-title">
           <div class="section-rule"></div>
-          <h2 id="work-title">Our Work</h2>
-          <div class="small-hero work-photo" aria-hidden="true"></div>
+          <h2 id="work-title">Current Projects</h2>
           <p class="section-subhead">Look at what we're working on and get involved!</p>
 
           <div class="project-grid">
-            <article class="project-card">
+            <article class="project-card" tabindex="0">
               <p class="badge">Active</p>
-              <div class="project-image empty"></div>
-              <h4>Tally Up</h4>
-              <p>Count any handout to community members in need. Formerly Meal Tally and is next step.</p>
-              <div class="project-links">
-                <img src="https://opensourcesanjose.org/assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="Github" />
-                <span aria-hidden="true">↗</span>
+              <img class="project-image" src="./assets/volunteerkidsfood.jpg" alt="Volunteers packing food bags" />
+              <div class="project-overlay">
+                <div class="project-copy">
+                  <h4>Tally Up</h4>
+                  <p>Count any handout to community members in need. Formerly Meal Tally and is next step.</p>
+                  <p class="tech">Tech: HTM, CSS, Typescript, Quik, Tailwind CSS</p>
+                </div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
               </div>
-              <p class="tech">Tech: HTM, CSS, Typescript, Quik, Tailwind CSS</p>
-              <button type="button" data-project="Tally Up">Learn More</button>
             </article>
 
-            <article class="project-card">
+            <article class="project-card" tabindex="0">
               <p class="badge">Active</p>
               <img
                 class="project-image"
                 src="https://opensourcesanjose.org/assets/img/projects/project_placeholder.jpg"
                 alt=""
               />
-              <h4>Heart of the Valley</h4>
-              <p>Map of public art and murals in South Bay, built with Mapbox JS.</p>
-              <div class="project-links">
-                <img src="https://opensourcesanjose.org/assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="Github" />
-                <span aria-hidden="true">↗</span>
+              <div class="project-overlay">
+                <div class="project-copy">
+                  <h4>Heart of the Valley</h4>
+                  <p>Map of public art and murals in South Bay, built with Mapbox JS.</p>
+                  <p class="tech">Tech: Mapbox JS</p>
+                </div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
               </div>
-              <p class="tech">Tech:</p>
-              <button type="button" data-project="Heart of the Valley">Learn More</button>
             </article>
 
-            <article class="project-card">
+            <article class="project-card" tabindex="0">
               <p class="badge">Active</p>
               <img
                 class="project-image"
                 src="https://opensourcesanjose.org/assets/img/projects/osm/OSM-Map.png"
                 alt=""
               />
-              <h4>OpenStreetMap (OSM)</h4>
-              <p>Building a detailed, locally relevant map of the South Bay as part of a worldwide open data community.</p>
-              <div class="project-links">
-                <img src="https://opensourcesanjose.org/assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="Github" />
-                <span aria-hidden="true">↗</span>
+              <div class="project-overlay">
+                <div class="project-copy">
+                  <h4>OpenStreetMap (OSM)</h4>
+                  <p>Building a detailed, locally relevant map of the South Bay as part of a worldwide open data community.</p>
+                  <p class="tech">Tech: OpenStreetMap</p>
+                </div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
               </div>
-              <p class="tech">Tech: OpenStreetMap</p>
-              <button type="button" data-project="OpenStreetMap (OSM)">Learn More</button>
             </article>
           </div>
 
@@ -183,7 +178,7 @@
           <p class="section-subhead">Open Source San José enjoys the generous support of:</p>
           <div class="sponsor-row">
             <div class="volunteer-logo" aria-label="Our Volunteers">
-              <img src="./assets/community-volunteers.png" alt="" />
+              <img src="./assets/community-volunteers.svg" alt="" />
               <h5>Our Volunteers</h5>
             </div>
             <img class="microsoft-logo" src="./assets/microsoft-logo-2012-white.svg" alt="Microsoft Logo" />
@@ -203,17 +198,52 @@
         <section class="section find-us" aria-labelledby="find-title">
           <div class="section-rule"></div>
           <h2 id="find-title">Find Us</h2>
-          <div class="text-content">
-            <p class="notify">Please see our Eventbrite page or join our Discord server for up-to-date details and registration links.</p>
-            <p>
-              Open Source San José typically meets the fourth Thursday of the month at 6:30 p.m. at Mountain Mikes
-              Pizza, 29 S Third St, San Jose, CA 95113. Individual project teams may meet more regularly at other times.
-            </p>
-            <p>Anyone can join! Technical skills are not required to contribute. We onboard new members at every meeting.</p>
-          </div>
-          <div class="map-card">
-            <span>Map area</span>
-            <strong>29 S Third St, San Jose, CA</strong>
+          <div class="find-map-shell">
+            <aside class="find-info-card" aria-label="Meeting details">
+              <h3>Get in touch</h3>
+              <p class="find-alert">
+                Check Eventbrite or Discord for current details and registration.
+              </p>
+              <dl class="find-details">
+                <div>
+                  <dt>When</dt>
+                  <dd>Usually the fourth Thursday at 6:30 p.m.</dd>
+                </div>
+                <div>
+                  <dt>Where</dt>
+                  <dd>Mountain Mike's Pizza, 29 S Third St, San Jose, CA 95113</dd>
+                </div>
+                <div>
+                  <dt>Teams</dt>
+                  <dd>Project teams may meet more regularly at other times.</dd>
+                </div>
+                <div>
+                  <dt>Join</dt>
+                  <dd>No technical skills required. New members onboard every meeting.</dd>
+                </div>
+              </dl>
+              <div class="find-actions" aria-label="Registration links">
+                <a href="#">Eventbrite</a>
+                <a href="#">Discord</a>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=29%20S%20Third%20St%2C%20San%20Jose%2C%20CA%2095113"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Directions
+                </a>
+              </div>
+            </aside>
+            <div class="map-card">
+              <iframe
+                class="map-frame"
+                title="Interactive map to Mountain Mike's Pizza, 29 S Third St, San Jose, CA 95113"
+                src="https://www.google.com/maps?f=q&source=s_q&hl=en&q=29%20S%20Third%20St%2C%20San%20Jose%2C%20CA%2095113&z=16&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </section>
       </main>
