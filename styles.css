@@ -292,7 +292,7 @@ p {
 .about-feature-label {
   color: var(--blue);
   font-family: var(--font-body);
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
