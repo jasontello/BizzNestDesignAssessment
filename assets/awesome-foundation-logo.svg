@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 438 52" role="img" aria-labelledby="title">
+  <title id="title">The Awesome Foundation</title>
+  <g fill="#ff2f6d">
+    <path d="M0 8 L18 26 L0 44 Z"/>
+    <path d="M24 8 L42 26 L24 44 Z"/>
+  </g>
+  <text
+    x="66"
+    y="34"
+    fill="#ffffff"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="24"
+    font-weight="700"
+    letter-spacing="0.8"
+  >THE AWESOME FOUNDATION</text>
+</svg>

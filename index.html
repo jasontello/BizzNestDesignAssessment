@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Source San José Recreation</title>
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="code-rain-background" aria-hidden="true">
+      <canvas class="code-rain-canvas"></canvas>
+    </div>
+    <div class="container">
+      <header class="site-header">
+        <a class="brand" href="#">
+          <img
+            src="https://opensourcesanjose.org/assets/img/logonav.png"
+            alt="Open Source San José logo"
+          />
+        </a>
+
+        <button class="menu-button" type="button" aria-label="Toggle menu" aria-expanded="false">
+          ☰
+        </button>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <div class="nav-links">
+            <a href="#">Volunteer</a>
+            <div class="nav-dropdown">
+              <button class="nav-trigger" type="button" aria-expanded="false">
+                About
+                <span aria-hidden="true">⌄</span>
+              </button>
+              <div class="dropdown-menu">
+                <a href="#">About Us</a>
+                <a href="#">Events</a>
+                <a href="#">FAQ</a>
+                <a href="#">Projects</a>
+              </div>
+            </div>
+            <div class="nav-dropdown">
+              <button class="nav-trigger" type="button" aria-expanded="false">
+                Community
+                <span aria-hidden="true">⌄</span>
+              </button>
+              <div class="dropdown-menu">
+                <a href="#">Discord</a>
+                <a href="#">Eventbrite</a>
+                <a href="#">Mastodon</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter/X</a>
+                <a href="#">Github</a>
+                <a href="#">Medium</a>
+              </div>
+            </div>
+            <a href="#">Donate</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-panel">
+            <h1 id="hero-title">Help Build Tech for a Better San José</h1>
+            <p>Uniting volunteer coders, designers, researchers, community members, &amp; more in solving local issues</p>
+            <div class="hero-actions">
+              <a class="hero-button" href="#">Get Involved</a>
+            </div>
+          </div>
+          <div class="hero-media" aria-hidden="true"></div>
+        </section>
+
+        <section class="about-editorial" aria-label="About Open Source San José">
+          <article class="about-feature about-feature-who">
+            <div class="about-feature-copy">
+              <p class="about-feature-label">Who we are</p>
+              <h3>
+                Open Source San José is a nonprofit civic innovation community where volunteers use technology, UX
+                research, UI design, and partnerships to solve local problems.
+              </h3>
+            </div>
+          </article>
+
+          <article class="about-feature about-feature-mission">
+            <div class="about-feature-copy">
+              <p class="about-feature-label">Our mission</p>
+              <h3>
+                We make community services more transparent, accessible, and equitable by building civic projects with
+                local government and community-based organizations.
+              </h3>
+            </div>
+          </article>
+
+          <article class="about-feature about-feature-vision">
+            <div class="about-feature-copy">
+              <p class="about-feature-label">Our vision</p>
+              <h3>
+                We aim to be a trusted technical partner for San José, nearby governments, and local nonprofits whenever
+                community challenges need thoughtful digital solutions.
+              </h3>
+            </div>
+          </article>
+
+          <article class="about-feature about-feature-work">
+            <div class="about-feature-copy">
+              <p class="about-feature-label">What we do</p>
+              <h3>
+                We host bi-monthly civic hack nights where anyone can get onboarded, join a project, and contribute skills
+                in code, design, research, organizing, writing, data, or subject-matter expertise.
+              </h3>
+            </div>
+          </article>
+        </section>
+
+        <section class="cta-strip" aria-label="Get involved">
+          <article class="cta-card">
+            <div class="cta-icon" aria-hidden="true">🤝</div>
+            <a href="#">Get Involved</a>
+            <p>Share your skills with your community!</p>
+          </article>
+        </section>
+
+        <section class="section work" aria-labelledby="work-title">
+          <div class="section-rule"></div>
+          <h2 id="work-title">Our Work</h2>
+          <div class="small-hero work-photo" aria-hidden="true"></div>
+          <p class="section-subhead">Look at what we're working on and get involved!</p>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <p class="badge">Active</p>
+              <div class="project-image empty"></div>
+              <h4>Tally Up</h4>
+              <p>Count any handout to community members in need. Formerly Meal Tally and is next step.</p>
+              <div class="project-links">
+                <img src="https://opensourcesanjose.org/assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="Github" />
+                <span aria-hidden="true">↗</span>
+              </div>
+              <p class="tech">Tech: HTM, CSS, Typescript, Quik, Tailwind CSS</p>
+              <button type="button" data-project="Tally Up">Learn More</button>
+            </article>
+
+            <article class="project-card">
+              <p class="badge">Active</p>
+              <img
+                class="project-image"
+                src="https://opensourcesanjose.org/assets/img/projects/project_placeholder.jpg"
+                alt=""
+              />
+              <h4>Heart of the Valley</h4>
+              <p>Map of public art and murals in South Bay, built with Mapbox JS.</p>
+              <div class="project-links">
+                <img src="https://opensourcesanjose.org/assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="Github" />
+                <span aria-hidden="true">↗</span>
+              </div>
+              <p class="tech">Tech:</p>
+              <button type="button" data-project="Heart of the Valley">Learn More</button>
+            </article>
+
+            <article class="project-card">
+              <p class="badge">Active</p>
+              <img
+                class="project-image"
+                src="https://opensourcesanjose.org/assets/img/projects/osm/OSM-Map.png"
+                alt=""
+              />
+              <h4>OpenStreetMap (OSM)</h4>
+              <p>Building a detailed, locally relevant map of the South Bay as part of a worldwide open data community.</p>
+              <div class="project-links">
+                <img src="https://opensourcesanjose.org/assets/img/social_logos/GitHub-Mark-Light-120px-plus.png" alt="Github" />
+                <span aria-hidden="true">↗</span>
+              </div>
+              <p class="tech">Tech: OpenStreetMap</p>
+              <button type="button" data-project="OpenStreetMap (OSM)">Learn More</button>
+            </article>
+          </div>
+
+          <a class="see-more" href="#">+ See More</a>
+        </section>
+
+        <section class="section sponsors" aria-labelledby="sponsors-title">
+          <div class="section-rule"></div>
+          <h2 id="sponsors-title">Thanks to our Sponsors</h2>
+          <p class="section-subhead">Open Source San José enjoys the generous support of:</p>
+          <div class="sponsor-row">
+            <div class="volunteer-logo" aria-label="Our Volunteers">
+              <img src="./assets/community-volunteers.png" alt="" />
+              <h5>Our Volunteers</h5>
+            </div>
+            <img class="microsoft-logo" src="./assets/microsoft-logo-2012-white.svg" alt="Microsoft Logo" />
+            <img
+              class="awesome-logo"
+              src="./assets/awesome-foundation-logo.svg"
+              alt="Awesome Foundation Logo"
+            />
+          </div>
+          <p class="text-content">
+            Open Source San José is a 501(c)(3) nonprofit organization. Our federal
+            <abbr title="Employer Identification Number">EIN</abbr> is 99-4612294. Your generous donations are eligible
+            for charitable deductions under Internal Revenue Code section 170.
+          </p>
+        </section>
+
+        <section class="section find-us" aria-labelledby="find-title">
+          <div class="section-rule"></div>
+          <h2 id="find-title">Find Us</h2>
+          <div class="text-content">
+            <p class="notify">Please see our Eventbrite page or join our Discord server for up-to-date details and registration links.</p>
+            <p>
+              Open Source San José typically meets the fourth Thursday of the month at 6:30 p.m. at Mountain Mikes
+              Pizza, 29 S Third St, San Jose, CA 95113. Individual project teams may meet more regularly at other times.
+            </p>
+            <p>Anyone can join! Technical skills are not required to contribute. We onboard new members at every meeting.</p>
+          </div>
+          <div class="map-card">
+            <span>Map area</span>
+            <strong>29 S Third St, San Jose, CA</strong>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div>
+            <img class="footer-logo" src="https://opensourcesanjose.org/assets/img/logonav.png" alt="Open Source San José logo" />
+            <p>Got feedback? Let us know!</p>
+            <p>© 2014–2026 Open Source San José</p>
+            <div class="footer-socials" aria-label="Social links">
+              <a href="#" aria-label="Discord">
+                <img src="https://api.iconify.design/simple-icons:discord.svg?color=%23a8a8a8" alt="" />
+              </a>
+              <a href="#" aria-label="Eventbrite">
+                <img src="https://api.iconify.design/simple-icons:eventbrite.svg?color=%23a8a8a8" alt="" />
+              </a>
+              <a href="#" aria-label="Mastodon">
+                <img src="https://api.iconify.design/simple-icons:mastodon.svg?color=%23a8a8a8" alt="" />
+              </a>
+              <a href="#" aria-label="Facebook">
+                <img src="https://api.iconify.design/simple-icons:facebook.svg?color=%23a8a8a8" alt="" />
+              </a>
+              <a href="#" aria-label="Twitter/X">
+                <img src="https://api.iconify.design/simple-icons:x.svg?color=%23a8a8a8" alt="" />
+              </a>
+              <a href="#" aria-label="GitHub">
+                <img src="https://api.iconify.design/simple-icons:github.svg?color=%23a8a8a8" alt="" />
+              </a>
+              <a href="#" aria-label="Medium">
+                <img src="https://api.iconify.design/simple-icons:medium.svg?color=%23a8a8a8" alt="" />
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4>Site</h4>
+            <a href="#">Volunteer</a>
+            <a href="#">About Us</a>
+            <a href="#">Projects</a>
+            <a href="#">FAQ</a>
+          </div>
+          <div>
+            <h4>Connect</h4>
+            <a href="#">Discord</a>
+            <a href="#">Eventbrite</a>
+            <a href="#">Github</a>
+            <a href="#">Medium</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <dialog class="project-modal" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" aria-label="Close modal">×</button>
+      <h3 id="modal-title">Project</h3>
+      <p>
+        This recreates the original homepage's project detail behavior at a lightweight level for design reference.
+      </p>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
