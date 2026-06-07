@@ -1011,6 +1011,13 @@ h2 {
   }
 }
 
+@media (min-width: 900px) and (max-width: 1599px) {
+  .hero {
+    column-gap: clamp(20px, 2.5vw, 36px);
+    padding-right: clamp(24px, 3vw, 40px);
+  }
+}
+
 @media (min-width: 1200px) {
   .container {
     box-shadow: none;
