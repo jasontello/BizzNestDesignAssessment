@@ -343,20 +343,31 @@ p {
   margin: 15% 0;
 }
 
-.section-rule {
-  height: 15px;
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   width: 100%;
-  margin-bottom: -26px;
-  background: var(--blue);
+  margin-bottom: 20px;
+  background: transparent;
+  font-size: 1.5rem;
+  white-space: nowrap;
 }
 
-h2 {
-  width: fit-content;
-  margin-left: 4%;
-  margin-bottom: 20px;
-  background: var(--bg-soft);
-  padding: 0 10px;
-  font-size: 1.5rem;
+h2::before,
+h2::after {
+  height: 2px;
+  background: var(--blue);
+  content: "";
+  opacity: 0.78;
+}
+
+h2::before {
+  flex: 0 0 4%;
+}
+
+h2::after {
+  flex: 1;
 }
 
 .section-subhead {
